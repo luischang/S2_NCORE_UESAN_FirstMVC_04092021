@@ -46,7 +46,7 @@ namespace S2_NCORE_UESAN_FirstMVC.Web
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Security}/{action=Login}/{id?}");
             });
         }
     }

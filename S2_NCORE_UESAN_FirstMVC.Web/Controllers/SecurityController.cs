@@ -12,5 +12,24 @@ namespace S2_NCORE_UESAN_FirstMVC.Web.Controllers
         {
             return View();
         }
+
+        public IActionResult Login()
+        {
+          
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Login(string email, string password)
+        {
+            if (email == "lchangu@esan.edu.pe" && password == "123456")
+            {
+                return View("Login");
+            }
+
+            return RedirectToAction("Login");
+
+        }
+
     }
 }
