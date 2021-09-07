@@ -45,8 +45,14 @@ namespace S2_NCORE_UESAN_FirstMVC.Web
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                  name: "areas",
+                  pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+                );
+
+                endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Security}/{action=Login}/{id?}");
+
             });
         }
     }
