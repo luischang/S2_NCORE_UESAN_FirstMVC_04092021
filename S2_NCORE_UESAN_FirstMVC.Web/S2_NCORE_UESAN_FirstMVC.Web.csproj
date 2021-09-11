@@ -17,8 +17,6 @@
     <Folder Include="Areas\Finanzas\Data\" />
     <Folder Include="Areas\Finanzas\Models\" />
     <Folder Include="Areas\Finanzas\Views\" />
-    <Folder Include="Areas\Marketing\Data\" />
-    <Folder Include="Areas\Marketing\Models\" />
   </ItemGroup>
 
 </Project>
